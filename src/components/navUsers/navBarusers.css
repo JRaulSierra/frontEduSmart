@@ -1,0 +1,24 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
+a {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
+  text-decoration: none;
+}
+
+.letra h1{
+    font-size: 1.5rem !important;
+}
+
+.head-div{
+    display: flex;
+}
+
+
+.navUser-i {
+  display: flex!important;
+  height: 100vh!important;
+  overflow: scroll initial!important;
+  background-color: #1D2242 !important;
+}
