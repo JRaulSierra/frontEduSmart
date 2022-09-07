@@ -9,7 +9,7 @@ function Student() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch("backedusmart-educasmart.up.railway.app/clases/clasesData")
+    fetch("http://backedusmart-educasmart.up.railway.app/clases/clasesData")
       .then((res) => res.json())
       .then((clases) => {
         setData(clases);

@@ -17,7 +17,7 @@ export default function UsuarioList({ children }) {
   const [materiasMaestros, setMateriasMaestros] = useState([]);
 
   const recibirDatos = () => {
-    fetch("backedusmart-educasmart.up.railway.app/updateUsuarios/usuarios")
+    fetch("http://backedusmart-educasmart.up.railway.app/updateUsuarios/usuarios")
       .then((res) => res.json())
       .then((info) => letsTry(info));
   };
@@ -43,7 +43,7 @@ export default function UsuarioList({ children }) {
 
   // en este hacemos la actualizacion de los datos en nuestro json de bacjend futuro nuestro DB
   const updateDatos = (User) => {
-    fetch("backedusmart-educasmart.up.railway.app/updateUsuarios/modify", {
+    fetch("http://backedusmart-educasmart.up.railway.app/updateUsuarios/modify", {
       method: "POST",
       body: JSON.stringify({ User }),
       headers: {
@@ -55,7 +55,7 @@ export default function UsuarioList({ children }) {
 
   const deleteDatos = (User) => {
     // console.log("asdfasdf"+ User.email)
-    fetch("backedusmart-educasmart.up.railway.app/deleteUsuarios/delete", {
+    fetch("http://backedusmart-educasmart.up.railway.app/deleteUsuarios/delete", {
       method: "POST",
       body: JSON.stringify({ User }),
       headers: {
@@ -69,7 +69,7 @@ export default function UsuarioList({ children }) {
     // console.log("ESTE ES EL USUARIO" + User.email);
     // const dato = User;
     // console.log("ESTE ES EL USUARIO" + dato.email);
-    await fetch("backedusmart-educasmart.up.railway.app/updateUsuarios/create", {
+    await fetch("http://backedusmart-educasmart.up.railway.app/updateUsuarios/create", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ User }),

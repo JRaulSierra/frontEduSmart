@@ -41,7 +41,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "proxy": "http://localhost:3001",
+  "proxy": "http://backedusmart-educasmart.up.railway.app",
   "eslintConfig": {
     "extends": [
       "react-app",

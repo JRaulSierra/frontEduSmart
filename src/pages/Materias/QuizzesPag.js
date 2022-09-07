@@ -167,7 +167,7 @@ function QuizzesPag() {
     const DescArchivo = description;
     const moduloArchivo = module;
     const name = nombre;
-    const url = `http://localhost:3000/memoria/${name}`;
+    const url = `http://backedusmart-educasmart.up.railway.app/memoria/${name}`;
 
     if (!/\.(jpg|png|gif|jpg)$/i.test(img1.name)) {
       alert("El archivo a adjuntar no es una imagen ->imagen1");
