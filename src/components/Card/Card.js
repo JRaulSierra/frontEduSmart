@@ -25,7 +25,7 @@ function CardClases(props) {
   const image = props.clase.imagen;
 
   const deleteHandler = async (c) => {
-    await fetch("http://localhost:3001/clases/delete", {
+    await fetch("backedusmart-educasmart.up.railway.app/clases/delete", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -58,7 +58,7 @@ function CardClases(props) {
         );
         await archivoPath.put(images);
         const enlaceURL = await archivoPath.getDownloadURL();
-        await fetch("http://localhost:3001/clases/update", {
+        await fetch("backedusmart-educasmart.up.railway.app/clases/update", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
@@ -81,7 +81,7 @@ function CardClases(props) {
           });
       }
     } else {
-      await fetch("http://localhost:3001/clases/update", {
+      await fetch("backedusmart-educasmart.up.railway.app/clases/update", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
