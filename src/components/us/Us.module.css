@@ -1,0 +1,21 @@
+.portada {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 4rem 0;
+  text-align: center;
+}
+
+.portada img {
+  max-width: 35%;
+  height: auto;
+}
+
+
+
+.text {
+  max-width: 80%;
+  height: auto;
+  padding: 1rem;
+}

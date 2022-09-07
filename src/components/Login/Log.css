@@ -1,0 +1,83 @@
+body{
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.header {
+  font-weight: bold;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10%;
+  align-items: center;
+}
+
+.header a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cardlog {
+  display: flex !important;
+  align-items: center !important;
+  flex-direction: row !important;
+  background-color: transparent !important;
+  height: 100%;
+  width: 90%;
+  border: none !important;
+  margin: 5% auto 0 auto;
+}
+
+.img {
+  padding-right: 10%;
+}
+
+.img img {
+  height: 30rem;
+  width: 100%;
+}
+
+.log {
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 25rem;
+  flex: 1;
+}
+
+.log h2 {
+  size: 60px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.inputt {
+  height: 45px !important;
+  padding: 5px 12px !important;
+  display: initial !important;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.button {
+  border-radius: 35px;
+  /* width: 25%; */
+  height: 10%;
+  width: 200px;
+  float: right;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
+  border: 2px solid#3A69A8;
+  background: #3a69a8;
+  color: #f3f3f5;
+  cursor: pointer;
+}
+
+.recuperar{
+  display: flex;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
+.recuperar a{
+  padding: 0px 15px !important;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
+}
