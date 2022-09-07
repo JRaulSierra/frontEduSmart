@@ -2,7 +2,7 @@
   "name": "edu-s-g",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://jraulsierra.github.io",
+  "homepage": "https://jraulsierra.github.io/frontEduSmart/",
   "dependencies": {
     "@coreui/coreui": "^4.0.1",
     "@coreui/react": "^4.0.0-rc.0",
