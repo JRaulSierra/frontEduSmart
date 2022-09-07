@@ -19,7 +19,7 @@ function ClasesAdmin(props) {
   const [descrip, Setdescrip] = useState("");
 
   useEffect(() => {
-    fetch("http://backedusmart-educasmart.up.railway.app/clases/clasesData")
+    fetch("https://backedusmart-educasmart.up.railway.app/clases/clasesData")
       .then((res) => res.json())
       .then((clases) => {
         setData(clases);
@@ -44,7 +44,7 @@ function ClasesAdmin(props) {
       const archivoPath = storageRef.child(`clase${nombre}/${image.name}`);
       await archivoPath.put(image);
       const enlaceURL = await archivoPath.getDownloadURL();
-      await fetch("http://backedusmart-educasmart.up.railway.app/clases/crearClase", {
+      await fetch("https://backedusmart-educasmart.up.railway.app/clases/crearClase", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

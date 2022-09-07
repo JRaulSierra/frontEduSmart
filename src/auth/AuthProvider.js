@@ -18,7 +18,7 @@ export default function AuthProvider({ children }) {
 
   // esta es la funcion con la que realizaremos el login y las utenticaciones
   const login = (userCredentials, fromLocation) => {
-    fetch("http://backedusmart-educasmart.up.railway.app/access/accessApprove", {
+    fetch("https://backedusmart-educasmart.up.railway.app/access/accessApprove", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -16,7 +16,7 @@ function Teacher(props) {
   const handleShow = () => setShow(true);
 
   useEffect(() => {
-    fetch("http://backedusmart-educasmart.up.railway.app/clases/clasesData")
+    fetch("https://backedusmart-educasmart.up.railway.app/clases/clasesData")
       .then((res) => res.json())
       .then((clases) => {
         setData(clases);
