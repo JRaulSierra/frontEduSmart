@@ -90,8 +90,8 @@ function App() {
                 component={UsersAdmin}
               />
 
-              <PrivateRoute
-                hasRole={roles.admin}
+              <PublicRoute
+                hasRole={roles.normal}
                 path={routes.adminTable}
                 component={AdminTable}
               />
